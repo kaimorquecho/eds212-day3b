@@ -1,0 +1,66 @@
+---
+title: "Day 3 afternoon session"
+author: "Kaiju M"
+format: html
+---
+
+## Create some vectors in R
+
+These are all character string elements: 
+```{r}
+# vectors must contain elements of the same data type (numerical, word strings) ----
+
+marmots <- c("blue", "green", 4, "yellow")
+
+# if we wanted 4 to be a character string, we would put it in quotations ----
+
+# return it ----
+marmots
+# it will return it in the same data type as the rest. so it returns 4 as a character "4".
+# if you enter vector w string as first argument it will set ALL other arguments to strings 
+
+# class ----
+class(marmots)
+
+```
+
+These are all numerical elements:
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 5)
+pika
+class(pika)
+
+# in a data frame each category is a vector. ----
+```
+ 
+These are all integer elements:
+```{r}
+bear <- c(20L, 3L, 18L, 23L)
+bear
+class(bear)
+```
+
+## Vector math 
+
+Create some vectors
+```{r}
+ringtail <- c(4.3, 8.9, 2.6, 7.1)
+fox <- c(9.0,12.5, 5.4, 10.9)
+
+# add ----
+ringtail + fox
+
+# they get added in the order in which the arguments are written (4.3+9.0, 12.5+8.9 etc) ----
+
+# subtract ----
+fox - ringtail
+
+# scalar multiply
+100* ringtail
+
+# dot product ----
+ringtail %*% fox
+
+```
+
+ 
